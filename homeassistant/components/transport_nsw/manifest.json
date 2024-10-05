@@ -4,6 +4,12 @@
   "codeowners": [],
   "documentation": "https://www.home-assistant.io/integrations/transport_nsw",
   "iot_class": "cloud_polling",
-  "loggers": ["TransportNSW"],
-  "requirements": ["PyTransportNSW==0.1.1"]
+  "loggers": [
+    "TransportNSW"
+  ],
+  "requirements": [
+    "PyTransportNSW @ git+https://github.com/aarongorka/TransportNSW.git@trip-planner-config-flow"
+  ],
+  "version": "2.0.0",
+  "config_flow": true
 }

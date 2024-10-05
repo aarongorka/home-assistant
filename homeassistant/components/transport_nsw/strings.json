@@ -1,0 +1,25 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "data": {
+          "api_key": "[%key:common::config_flow::data::password%]",
+          "name": "[%key:common::config_flow::data::name%]",
+          "stop_id": "Stop ID",
+          "route": "Route",
+          "destination": "Destination"
+        },
+        "data_description": {
+          "api_key": "API key for Transport NSW, see https://opendata.transport.nsw.gov.au/user-guide"
+        }
+      }
+    },
+    "abort": {
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "error": {
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    }
+  }
+}
